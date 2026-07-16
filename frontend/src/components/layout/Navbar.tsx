@@ -21,7 +21,7 @@ import { useSettings } from '@/contexts/SettingsContext';
 
 // Optional: if you have a Google Maps key, set `VITE_GOOGLE_MAPS_API_KEY` in your env.
 // If not set, we fallback to OpenStreetMap geocoding + embed (no key needed).
-const GOOGLE_MAPS_API_KEY = "AIzaSyCLMDUEWm0mSdjcqVaVbGGGgzFEQNdMZLs";
+const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
 const SAVED_LOCATION_STORAGE_KEY = 'healthytouch_saved_location';
 const LOCATION_UPDATED_EVENT = 'healthytouch-location-updated';
 const OPEN_LOCATION_PICKER_EVENT = 'healthytouch-open-location-picker';

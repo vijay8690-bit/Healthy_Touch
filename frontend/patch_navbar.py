@@ -8,7 +8,7 @@ import_str = "import { LocationSearchInput } from '@/components/ui/LocationSearc
 text = text.replace("import { Button } from '@/components/ui/button';", import_str)
 
 # Replace Google Maps key constant to use the provided one
-text = re.sub(r'const GOOGLE_MAPS_API_KEY = .*;', 'const GOOGLE_MAPS_API_KEY = "AIzaSyCLMDUEWm0mSdjcqVaVbGGGgzFEQNdMZLs";', text)
+text = re.sub(r'const GOOGLE_MAPS_API_KEY = .*;', 'const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;', text)
 
 # Replace the manual location grid with our new component
 manual_grid_regex = re.compile(
