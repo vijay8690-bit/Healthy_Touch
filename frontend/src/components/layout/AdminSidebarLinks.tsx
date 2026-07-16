@@ -1,0 +1,45 @@
+import {
+  LayoutDashboard,
+  Users,
+  Stethoscope,
+  Heart,
+  Calendar,
+  Ambulance,
+  FlaskConical,
+  Beaker,
+  DollarSign,
+  Wallet,
+  Coins,
+  MessageSquare,
+  Bell,
+  Settings,
+  Home,
+  FileText,
+  MapPin,
+  TicketPercent,
+} from 'lucide-react';
+import { FEATURES } from '@/config/features';
+
+export const adminSidebarLinks = [
+  { icon: LayoutDashboard, label: 'Dashboard', href: '/admin/dashboard' },
+  { icon: Users, label: 'Users', href: '/admin/users' },
+  { icon: Stethoscope, label: 'Providers', href: '/admin/providers' },
+  { icon: Heart, label: 'Caretakers', href: '/admin/caretakers' },
+  { icon: Calendar, label: 'Appointments', href: '/admin/appointments' },
+  ...(FEATURES.AMBULANCE_MODULE
+    ? [{ icon: Ambulance, label: 'Ambulance', href: '/admin/ambulance' }]
+    : []),
+  { icon: FlaskConical, label: 'Lab Bookings', href: '/admin/lab-bookings' },
+  { icon: Beaker, label: 'Lab Tests', href: '/admin/lab-tests' },
+  { icon: DollarSign, label: 'Provider Payouts', href: '/admin/payouts' },
+  { icon: Wallet, label: 'Withdrawals', href: '/admin/withdrawals' },
+  { icon: Coins, label: 'Coins', href: '/admin/coins' },
+  { icon: TicketPercent, label: 'Coupons', href: '/admin/coupons' },
+  { icon: MessageSquare, label: 'Queries', href: '/admin/queries' },
+  { icon: Users, label: 'Our Team', href: '/admin/team' },
+  { icon: Home, label: 'Home Content', href: '/admin/home-content' },
+  { icon: FileText, label: 'Legal Docs', href: '/admin/legal-documents' },
+  { icon: MapPin, label: 'Locations', href: '/admin/locations' },
+  { icon: Bell, label: 'Notifications', href: '/admin/notifications' },
+  { icon: Settings, label: 'Settings', href: '/admin/settings' },
+];

@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Healthy Touch – General Recommendations</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 794px;
+    height: 1123px;
+    background: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Top header bar */
+  .top-bar {
+    background: #0a5c9e;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 28px;
+  }
+
+  .logo-area { display: flex; align-items: center; gap: 10px; }
+  .logo-circle {
+    width: 40px; height: 40px;
+    background: white; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .brand-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px; color: white;
+  }
+  .brand-name span { color: #7ee8c8; }
+  .report-tag {
+    background: #5bc4a0;
+    color: #0a3d28;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 5px 14px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .accent-stripe {
+    height: 4px;
+    background: linear-gradient(90deg, #5bc4a0, #4CAF50, #8BC34A);
+  }
+
+  /* Page title section */
+  .page-title {
+    background: #f0f9f4;
+    border-bottom: 2px solid #b2dfc8;
+    padding: 14px 28px 12px;
+  }
+  .page-label {
+    font-size: 9px;
+    font-weight: 700;
+    color: #5bc4a0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 3px;
+  }
+  .page-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: #0a3d6e;
+  }
+
+  /* Main table */
+  .rec-table {
+    width: calc(100% - 40px);
+    margin: 14px 20px 0;
+    border-collapse: collapse;
+    font-size: 10.5px;
+  }
+
+  .rec-table th {
+    background: #0a5c9e;
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 8px 10px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    border: 1px solid #0a4a82;
+  }
+  .rec-table th:first-child { text-align: left; border-radius: 4px 0 0 0; }
+  .rec-table th:last-child { border-radius: 0 4px 0 0; }
+
+  .rec-table td {
+    padding: 8px 10px;
+    border: 1px solid #e0edf8;
+    vertical-align: top;
+    line-height: 1.5;
+  }
+
+  .rec-table tr:nth-child(even) td { background: #f8fbff; }
+  .rec-table tr:nth-child(odd) td { background: #ffffff; }
+
+  .risk-name {
+    font-weight: 600;
+    font-size: 11px;
+    color: #0a3d6e;
+    display: block;
+    margin-bottom: 3px;
+  }
+  .test-name {
+    font-size: 10px;
+    color: #5a7a9a;
+    line-height: 1.4;
+  }
+
+  .age-cell {
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .rec-pill {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+  }
+  .pill-strong { background: #ffeaea; color: #b52222; }
+  .pill-rec    { background: #e8f4ff; color: #0a5c9e; }
+  .pill-opt    { background: #f0f9f4; color: #1a7a4a; }
+
+  .age-detail {
+    font-size: 9.5px;
+    color: #666;
+    line-height: 1.5;
+    display: block;
+    margin-top: 2px;
+  }
+
+  /* Bottom offer section */
+  .offer-section {
+    background: linear-gradient(135deg, #0a5c9e 0%, #0a3d6e 100%);
+    margin: 12px 20px 0;
+    border-radius: 8px;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .offer-text h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 3px;
+  }
+  .offer-text h4 span { color: #7ee8c8; }
+  .offer-text p { font-size: 11px; color: rgba(255,255,255,0.7); }
+
+  .packages-grid {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+  }
+  .pkg-box {
+    background: white;
+    border-radius: 6px;
+    padding: 8px 12px;
+    text-align: center;
+    min-width: 110px;
+  }
+  .pkg-name { font-size: 10px; font-weight: 600; color: #0a5c9e; display: block; }
+  .pkg-price { font-size: 18px; font-weight: 700; color: #e53935; display: block; margin: 2px 0; }
+  .pkg-tests { font-size: 9px; color: #888; }
+  .pkg-off { background: #5bc4a0; color: white; font-size: 9px; font-weight: 700; padding: 1px 6px; border-radius: 8px; display: inline-block; margin-top: 2px; }
+
+  /* Contact strip */
+  .contact-strip {
+    background: #f8fbff;
+    border-top: 1.5px solid #d0eafa;
+    margin: 10px 20px 0;
+    border-radius: 6px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .contact-item {
+    display: flex; align-items: center; gap: 6px;
+    font-size: 11px; color: #0a5c9e;
+  }
+  .contact-item strong { font-weight: 600; }
+
+  /* Footer */
+  .footer {
+    background: #0a3d6e;
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 44px;
+    display: flex; align-items: center;
+    justify-content: space-between;
+    padding: 0 28px;
+  }
+  .footer span { font-size: 10.5px; color: rgba(255,255,255,0.6); }
+  .footer strong { color: #7ee8c8; }
+
+  @media (max-width: 700px) {
+    body {
+      width: 100%;
+      height: auto;
+      min-height: 100vh;
+      overflow: visible;
+    }
+
+    .top-bar {
+      height: auto;
+      gap: 10px;
+      padding: 12px;
+    }
+
+    .logo-circle { width: 34px; height: 34px; }
+    .brand-name { font-size: 15px; }
+    .report-tag {
+      padding: 5px 8px;
+      font-size: 9px;
+      letter-spacing: 0.5px;
+    }
+
+    .page-title {
+      padding: 12px;
+    }
+
+    .page-heading {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .rec-table {
+      width: calc(100% - 16px);
+      margin: 10px 8px 0;
+      font-size: 8px;
+      table-layout: fixed;
+    }
+
+    .rec-table th,
+    .rec-table td {
+      padding: 6px 4px;
+    }
+
+    .rec-table th {
+      font-size: 7px;
+      letter-spacing: 0;
+    }
+
+    .risk-name {
+      font-size: 8.5px;
+    }
+
+    .test-name,
+    .age-detail {
+      font-size: 7.5px;
+      line-height: 1.35;
+    }
+
+    .rec-pill {
+      padding: 2px 4px;
+      font-size: 6.5px;
+      letter-spacing: 0;
+    }
+
+    .offer-section {
+      margin: 10px 8px 0;
+      padding: 12px;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 10px;
+    }
+
+    .packages-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 6px;
+      margin-left: 0;
+    }
+
+    .pkg-box {
+      min-width: 0;
+      padding: 7px 4px;
+    }
+
+    .pkg-name,
+    .pkg-tests,
+    .pkg-off {
+      font-size: 7px;
+    }
+
+    .pkg-price {
+      font-size: 13px;
+    }
+
+    .contact-strip {
+      margin: 10px 8px 58px;
+      padding: 10px;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .contact-item {
+      font-size: 9px;
+    }
+
+    .footer {
+      position: static;
+      min-height: 44px;
+      height: auto;
+      padding: 10px 12px;
+      gap: 6px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .footer span {
+      font-size: 9px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="top-bar">
+  <div class="logo-area">
+    <div class="logo-circle">
+      <svg viewBox="0 0 54 54" width="32" height="32" fill="none">
+        <circle cx="27" cy="24" r="18" fill="#1a5fa8"/>
+        <polygon points="27,8 42,26 12,26" fill="white" opacity="0.92"/>
+        <rect x="21" y="26" width="12" height="14" rx="1" fill="white" opacity="0.92"/>
+        <rect x="23" y="26" width="8" height="9" rx="1" fill="#1a5fa8"/>
+        <circle cx="38" cy="22" r="7" fill="#e53935"/>
+        <path d="M34 22 Q36 18 38 22 Q40 18 42 22" fill="none" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+        <circle cx="27" cy="24" r="18" fill="none" stroke="#4CAF50" stroke-width="2.5" stroke-dasharray="56 20"/>
+      </svg>
+    </div>
+    <div>
+      <div class="brand-name">Healthy <span>Touch</span></div>
+    </div>
+  </div>
+  <div class="report-tag">Smart Report</div>
+</div>
+
+<div class="accent-stripe"></div>
+
+<!-- Page Title -->
+<div class="page-title">
+  <div class="page-label">Recommendation</div>
+  <div class="page-heading">General Recommendation on Preventive Screening</div>
+</div>
+
+<!-- Main Table -->
+<table class="rec-table">
+  <thead>
+    <tr>
+      <th style="width:120px;">Risk Factors</th>
+      <th style="width:110px;">Recommended Tests</th>
+      <th style="width:110px;">Age Group<br>(18–29 Yrs.)</th>
+      <th style="width:110px;">Age Group<br>(30–39 Yrs.)</th>
+      <th style="width:110px;">Age Group<br>(40–55 Yrs.)</th>
+      <th style="width:110px;">Age Group<br>(Above 55 Yrs.)</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <td>
+        <span class="risk-name">🩸 Diabetes</span>
+      </td>
+      <td class="test-name">HbA1c<br>Blood Glucose Fasting</td>
+      <td class="age-cell">
+        <span class="rec-pill pill-opt">Optional</span>
+        <span class="age-detail">Screen annually<br>Repeat if symptoms<br>Under treatment: 3–6 months</span>
+      </td>
+      <td class="age-cell">
+        <span class="rec-pill pill-rec">Recommended</span>
+        <span class="age-detail">Screen annually<br>Repeat if symptoms<br>Under treatment: 3–6 months</span>
+      </td>
+      <td class="age-cell">
+        <span class="rec-pill pill-strong">Strongly Rec.</span>
+        <span class="age-detail">Screen annually<br>Repeat if symptoms<br>Under treatment: 3–6 months</span>
+      </td>
+      <td class="age-cell">
+        <span class="rec-pill pill-strong">Strongly Rec.</span>
+        <span class="age-detail">Screen annually<br>Repeat if symptoms<br>Under treatment: Every 3 months</span>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span class="risk-name">🦋 Thyroid Disorder</span>
+      </td>
+      <td class="test-name">Thyroid Profile-Total<br>(T3, T4 & TSH Ultra-sensitive)</td>
+      <td class="age-cell">
+        <span class="rec-pill pill-opt">Optional</span>
+        <span class="age-detail">Screen annually<br>Repeat if symptoms<br>Under treatment: 3 months</span>
+      </td>
+      <td class="age-cell">
+        <span class="rec-pill pill-rec">Recommended</span>
+        <span class="age-detail">Screen annually<br>Repeat if symptoms<br>Under treatment: 2–3 months</span>
+      </td>
+      <td class="age-cell">
+        <span class="rec-pill pill-strong">Strongly Rec.</span>
+        <span class="age-detail">Screen annually<br>Repeat if symptoms<br>Under treatment: 2–3 months</span>
+      </td>
+      <td class="age-cell">
+        <span class="rec-pill pill-strong">Strongly Rec.</span>
+        <span class="age-detail">Screen annually<br>Repeat if symptoms<br>Under treatment: 2–3 months</span>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span class="risk-name">☀️ Vitamin-D Deficiency</span>
+      </td>
+      <td class="test-name">Vitamin D Total<br>25-Hydroxy</td>
+      <td class="age-cell">
+        <span class="rec-pill pill-rec">Recommended</span>
+        <span class="age-detail">Screen annually<br>Repeat if symptoms<br>Under treatment: 3 months</span>
+      </td>
+      <td class="age-cell">
+        <span class="rec-pill pill-rec">Recommended</span>
+        <span class="age-detail">Screen annually<br>Repeat if symptoms<br>Under treatment: 3–6 months</span>
+      </td>
+      <td class="age-cell">
+        <span class="rec-pill pill-strong">Strongly Rec.</span>
+        <span class="age-detail">Screen annually<br>Repeat if symptoms<br>Under treatment: 3–6 months</span>
+      </td>
+      <td class="age-cell">
+        <span class="rec-pill pill-strong">Strongly Rec.</span>
+        <span class="age-detail">Screen annually<br>Repeat if symptoms<br>Under treatment: Every 3 months</span>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span class="risk-name">💊 Vitamin B12 Deficiency</span>
+      </td>
+      <td class="test-name">Vitamin B12<br>Cyanocobalamin</td>
+      <td class="age-cell">
+        <span class="rec-pill pill-rec">Recommended</span>
+        <span class="age-detail">Screen annually<br>Repeat if symptoms<br>Under treatment: 3 months</span>
+      </td>
+      <td class="age-cell">
+        <span class="rec-pill pill-rec">Recommended</span>
+        <span class="age-detail">Screen annually<br>Repeat if symptoms<br>Under treatment: 3–6 months</span>
+      </td>
+      <td class="age-cell">
+        <span class="rec-pill pill-strong">Strongly Rec.</span>
+        <span class="age-detail">Screen annually<br>Repeat if symptoms<br>Under treatment: 3–6 months</span>
+      </td>
+      <td class="age-cell">
+        <span class="rec-pill pill-strong">Strongly Rec.</span>
+        <span class="age-detail">Screen annually<br>Repeat if symptoms<br>Under treatment: Every 3 months</span>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span class="risk-name">❤️ High Cholesterol / Dyslipidemia</span>
+      </td>
+      <td class="test-name">Lipid Profile<br>Cholesterol-Total, Serum</td>
+      <td class="age-cell">
+        <span class="rec-pill pill-opt">Optional</span>
+        <span class="age-detail">Screen annually<br>Repeat if symptoms<br>Under treatment: 3 months</span>
+      </td>
+      <td class="age-cell">
+        <span class="rec-pill pill-rec">Recommended</span>
+        <span class="age-detail">Screen annually<br>Repeat if symptoms<br>Under treatment: 3 months</span>
+      </td>
+      <td class="age-cell">
+        <span class="rec-pill pill-strong">Strongly Rec.</span>
+        <span class="age-detail">Screen annually<br>Repeat if symptoms<br>Under treatment: 3 months</span>
+      </td>
+      <td class="age-cell">
+        <span class="rec-pill pill-strong">Strongly Rec.</span>
+        <span class="age-detail">Screen annually<br>Repeat if symptoms<br>Under treatment: 3 months</span>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span class="risk-name">🫘 Kidney Disorder</span>
+      </td>
+      <td class="test-name">Kidney Function Test<br>Urine Routine & Microscopy<br>Urea Serum</td>
+      <td class="age-cell">
+        <span class="rec-pill pill-opt">Optional</span>
+        <span class="age-detail">Screen annually<br>Repeat if symptoms<br>Under treatment: 3 months</span>
+      </td>
+      <td class="age-cell">
+        <span class="rec-pill pill-rec">Recommended</span>
+        <span class="age-detail">Screen annually<br>Repeat if symptoms<br>Under treatment: 3 months</span>
+      </td>
+      <td class="age-cell">
+        <span class="rec-pill pill-strong">Strongly Rec.</span>
+        <span class="age-detail">Screen annually<br>Repeat if symptoms<br>Under treatment: 3 months</span>
+      </td>
+      <td class="age-cell">
+        <span class="rec-pill pill-strong">Strongly Rec.</span>
+        <span class="age-detail">Screen annually<br>Repeat if symptoms<br>Under treatment: 3 months</span>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <span class="risk-name">🫀 Liver Disorder</span>
+      </td>
+      <td class="test-name">Liver Function Test<br>SGOT / AST<br>SGPT / ALT</td>
+      <td class="age-cell">
+        <span class="rec-pill pill-opt">Optional</span>
+        <span class="age-detail">Screen annually<br>Repeat if symptoms<br>Under treatment: 3 months</span>
+      </td>
+      <td class="age-cell">
+        <span class="rec-pill pill-rec">Recommended</span>
+        <span class="age-detail">Screen annually<br>Repeat if symptoms<br>Under treatment: 3 months</span>
+      </td>
+      <td class="age-cell">
+        <span class="rec-pill pill-strong">Strongly Rec.</span>
+        <span class="age-detail">Screen annually<br>Repeat if symptoms<br>Under treatment: 3 months</span>
+      </td>
+      <td class="age-cell">
+        <span class="rec-pill pill-strong">Strongly Rec.</span>
+        <span class="age-detail">Screen annually<br>Repeat if symptoms<br>Under treatment: 3 months</span>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+<!-- Offer Section -->
+<div class="offer-section">
+  <div class="offer-text">
+    <h4>Full Body Health Check-Up <span>Starts at ₹999</span></h4>
+    <p>Gift your family a healthier future · Home sample collection included · Report in 24 hours</p>
+  </div>
+  <div class="packages-grid">
+    <div class="pkg-box">
+      <span class="pkg-name">Basic Package</span>
+      <span class="pkg-price">₹999</span>
+      <span class="pkg-tests">60 Parameters</span><br>
+      <span class="pkg-off">71% OFF</span>
+    </div>
+    <div class="pkg-box">
+      <span class="pkg-name">Advanced Package</span>
+      <span class="pkg-price">₹1,999</span>
+      <span class="pkg-tests">82 Parameters</span><br>
+      <span class="pkg-off">73% OFF</span>
+    </div>
+    <div class="pkg-box">
+      <span class="pkg-name">Premium Package</span>
+      <span class="pkg-price">₹2,999</span>
+      <span class="pkg-tests">100+ Parameters</span><br>
+      <span class="pkg-off">Best Value</span>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Strip -->
+<div class="contact-strip">
+  <div class="contact-item">📞 <strong data-contact-phone>+91-9887894498</strong></div>
+  <div class="contact-item">✉️ <strong>care@healthytouch.com</strong></div>
+  <div class="contact-item" style="font-size:8px;max-width:290px;">🏠 Managed by Infinity vision overseas GROUND FLOOR, Flat No.: 01, MANDAWARA ROAD, MANDAWARA ROAD, Hindaun, Hindaun, Rajasthan 322230</div>
+  <div class="contact-item">🌐 <strong>www.healthytouch24.com</strong></div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <span>For any concern regarding this report, call our helpline: <strong data-contact-phone>+91-9887894498</strong></span>
+  <span><strong>www.healthytouch24.com</strong></span>
+</div>
+
+<script>
+  (function () {
+    var endpoints = ['/api/settings/public', 'https://api.healthytouch24.com/api/settings/public'];
+    function applyPhone(phone) {
+      if (!phone) return;
+      document.querySelectorAll('[data-contact-phone]').forEach(function (node) {
+        node.textContent = phone;
+      });
+    }
+    function load(index) {
+      if (index >= endpoints.length) return;
+      fetch(endpoints[index])
+        .then(function (response) { return response.ok ? response.json() : Promise.reject(); })
+        .then(function (data) { applyPhone(data && data.settings && data.settings.contactPhone); })
+        .catch(function () { load(index + 1); });
+    }
+    load(0);
+  })();
+</script>
+
+</body>
+</html>

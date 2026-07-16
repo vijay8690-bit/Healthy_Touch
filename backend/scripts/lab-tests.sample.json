@@ -1,0 +1,56 @@
+[
+  {
+    "testCode": "CBC001",
+    "testName": "Complete Blood Count",
+    "category": "Blood Test",
+    "description": "Screens red cells, white cells, hemoglobin, and platelets.",
+    "parameters": [
+      "Hemoglobin",
+      "RBC Count",
+      "WBC Count",
+      "Platelets"
+    ],
+    "city": "Jaipur",
+    "sellingPrice": 299,
+    "originalPrice": 499,
+    "discount": 40,
+    "reportTime": "24 hours",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Fever",
+      "Routine screening"
+    ],
+    "status": "active",
+    "isPopular": true,
+    "testId": "HT0001"
+  },
+  {
+    "testCode": "FBP001",
+    "testName": "Full Body Health Package",
+    "category": "Full Body Package",
+    "description": "Preventive package covering blood, liver, kidney, thyroid, and sugar markers.",
+    "parameters": [
+      "CBC",
+      "Liver Function",
+      "Kidney Function",
+      "Thyroid Profile",
+      "Blood Sugar"
+    ],
+    "city": "Jaipur",
+    "sellingPrice": 1499,
+    "originalPrice": 2999,
+    "discount": 50,
+    "reportTime": "48 hours",
+    "fastingRequired": true,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Adults",
+      "Annual checkup"
+    ],
+    "status": "active",
+    "isRecommendedPackage": true,
+    "isFullBodyPackage": true,
+    "testId": "HT0002"
+  }
+]

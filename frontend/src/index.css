@@ -1,0 +1,331 @@
+@import '@fontsource/poppins/400.css';
+@import '@fontsource/poppins/500.css';
+@import '@fontsource/poppins/600.css';
+@import '@fontsource/poppins/700.css';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 202 45% 97%;
+    --foreground: 211 52% 13%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 211 52% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 211 52% 13%;
+
+    --primary: 202 59% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 87 54% 44%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 200 36% 94%;
+    --muted-foreground: 209 17% 43%;
+
+    --accent: 86 54% 94%;
+    --accent-foreground: 88 55% 27%;
+
+    --destructive: 2 75% 52%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 203 30% 87%;
+    --input: 203 30% 87%;
+    --ring: 202 59% 45%;
+
+    --radius: 0.875rem;
+
+    /* Logo-derived Healthcare Palette */
+    --health-blue: 202 59% 45%;
+    --health-blue-deep: 203 63% 32%;
+    --health-green: 87 54% 44%;
+    --health-red: 2 75% 52%;
+    --health-ink: 211 52% 13%;
+    --health-light: 202 45% 97%;
+    --health-gray: 209 17% 43%;
+    --health-mist: 194 50% 96%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(202 59% 45%) 0%, hsl(203 63% 32%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(87 54% 44%) 0%, hsl(75 61% 52%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(211 52% 13% / 0.9) 0%, hsl(202 59% 35% / 0.82) 52%, hsl(87 54% 34% / 0.72) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(194 50% 98%) 100%);
+    --gradient-soft: radial-gradient(circle at top left, hsl(202 59% 45% / 0.12), transparent 34%), linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(194 50% 97%) 100%);
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(211 52% 13% / 0.05);
+    --shadow-md: 0 10px 24px -18px hsl(211 52% 13% / 0.35);
+    --shadow-lg: 0 18px 40px -24px hsl(211 52% 13% / 0.42);
+    --shadow-xl: 0 28px 60px -30px hsl(211 52% 13% / 0.5);
+    --shadow-glow: 0 18px 44px hsl(202 59% 45% / 0.18);
+    --shadow-card: 0 12px 34px -24px hsl(211 52% 13% / 0.42), 0 1px 0 hsl(0 0% 100% / 0.7) inset;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 211 52% 13%;
+    --sidebar-primary: 202 59% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 194 50% 95%;
+    --sidebar-accent-foreground: 203 63% 32%;
+    --sidebar-border: 203 30% 87%;
+    --sidebar-ring: 202 59% 45%;
+  }
+
+  .dark {
+    --background: 211 48% 8%;
+    --foreground: 200 34% 96%;
+
+    --card: 211 42% 12%;
+    --card-foreground: 200 34% 96%;
+
+    --popover: 211 42% 12%;
+    --popover-foreground: 200 34% 96%;
+
+    --primary: 202 62% 54%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 87 54% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 211 32% 18%;
+    --muted-foreground: 203 18% 68%;
+
+    --accent: 202 42% 20%;
+    --accent-foreground: 194 62% 82%;
+
+    --destructive: 2 73% 56%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 211 28% 22%;
+    --input: 211 28% 22%;
+    --ring: 202 62% 54%;
+
+    --sidebar-background: 211 42% 10%;
+    --sidebar-foreground: 200 34% 96%;
+    --sidebar-primary: 202 62% 54%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 211 32% 18%;
+    --sidebar-accent-foreground: 194 62% 82%;
+    --sidebar-border: 211 28% 22%;
+    --sidebar-ring: 202 62% 54%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    background-image: radial-gradient(circle at top left, hsl(var(--primary) / 0.08), transparent 26rem), radial-gradient(circle at bottom right, hsl(var(--secondary) / 0.08), transparent 30rem);
+  }
+
+  html,
+  body,
+  #root {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  img,
+  video,
+  canvas,
+  svg {
+    max-width: 100%;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  a,
+  button {
+    overflow-wrap: break-word;
+  }
+
+  input,
+  textarea,
+  select,
+  button {
+    font: inherit;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  .pac-container {
+    z-index: 99999 !important;
+    pointer-events: auto !important;
+    border-radius: 0.75rem;
+    border: 1px solid hsl(var(--border));
+    box-shadow: var(--shadow-xl);
+    margin-top: 0.25rem;
+    overflow: hidden;
+    font-family: inherit;
+  }
+
+  .pac-item {
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .pac-item:hover {
+    background: hsl(var(--muted));
+  }
+
+  .pac-item-query {
+    font-size: 0.875rem;
+    color: hsl(var(--foreground));
+  }
+
+  .btn-primary {
+    background: var(--gradient-primary);
+    @apply text-primary-foreground transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .btn-secondary {
+    background: var(--gradient-secondary);
+    @apply text-secondary-foreground transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .card-healthcare {
+    background: var(--gradient-card);
+    @apply rounded-2xl shadow-card border border-border/70 transition-all duration-300 hover:border-primary/20 hover:shadow-lg;
+    min-width: 0;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
+  }
+
+  .gradient-bg {
+    background: var(--gradient-hero);
+  }
+
+  .surface-soft {
+    background: var(--gradient-soft);
+    @apply border border-border/70 shadow-card;
+  }
+
+  .dashboard-shell {
+    @apply bg-background;
+  }
+
+  .dashboard-sidebar {
+    @apply border-r border-border/80 bg-card/95 shadow-lg;
+  }
+
+  .dashboard-header {
+    @apply border-b border-border/80 bg-card/90 shadow-sm backdrop-blur-xl;
+  }
+
+  .nav-pill {
+    @apply rounded-xl px-3 py-2 text-sm font-medium transition-all duration-200 hover:-translate-y-0.5;
+  }
+
+  .status-pending {
+    @apply bg-primary/10 text-primary border border-primary/20;
+  }
+
+  .status-approved {
+    @apply bg-secondary/10 text-secondary border border-secondary/20;
+  }
+
+  .status-completed {
+    @apply bg-primary/10 text-primary border border-primary/20;
+  }
+
+  .status-rejected {
+    @apply bg-destructive/10 text-destructive border border-destructive/20;
+  }
+
+  .responsive-table {
+    @apply w-full overflow-x-auto rounded-xl border border-border/70 bg-card shadow-sm;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .responsive-table > table {
+    min-width: 44rem;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .break-anywhere {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  @media (max-width: 430px) {
+    .grid.grid-cols-2:not(.keep-mobile-cols),
+    .grid.grid-cols-3:not(.keep-mobile-cols),
+    .grid.grid-cols-4:not(.keep-mobile-cols),
+    .grid.grid-cols-5:not(.keep-mobile-cols) {
+      grid-template-columns: minmax(0, 1fr) !important;
+    }
+  }
+
+  @media (max-width: 640px) {
+    [role="tablist"].grid {
+      display: flex !important;
+      justify-content: flex-start !important;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    [role="tablist"].grid [role="tab"] {
+      flex: 0 0 auto;
+    }
+
+    .overflow-x-auto > table {
+      min-width: 44rem;
+    }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.3s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes scaleIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+}

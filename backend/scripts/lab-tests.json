@@ -1,0 +1,880 @@
+[
+  {
+    "testCode": "CBC001",
+    "testName": "Complete Blood Count",
+    "category": "Basic",
+    "description": "Basic blood test to check overall health",
+    "parameters": [
+      "Hemoglobin",
+      "WBC",
+      "RBC",
+      "Platelets"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 149,
+    "originalPrice": 499,
+    "discount": 40,
+    "reportTime": "24 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "General health check"
+    ],
+    "status": "active",
+    "isPopular": true,
+    "testId": "HT0001"
+  },
+  {
+    "testCode": "THY001",
+    "testName": "Thyroid Profile",
+    "category": "Advanced",
+    "description": "Checks thyroid hormone levels",
+    "parameters": [
+      "T3",
+      "T4",
+      "TSH"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 399,
+    "originalPrice": 699,
+    "discount": 43,
+    "reportTime": "24 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Thyroid issues"
+    ],
+    "status": "active",
+    "isPopular": true,
+    "testId": "HT0002"
+  },
+  {
+    "testCode": "LFT001",
+    "testName": "Liver Function Test",
+    "category": "Advanced",
+    "description": "Evaluates liver health",
+    "parameters": [
+      "Bilirubin",
+      "SGPT",
+      "SGOT",
+      "Protein"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 499,
+    "originalPrice": 899,
+    "discount": 45,
+    "reportTime": "24 hrs",
+    "fastingRequired": true,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Liver health"
+    ],
+    "status": "active",
+    "testId": "HT0003"
+  },
+  {
+    "testCode": "KFT001",
+    "testName": "Kidney Function Test",
+    "category": "Advanced",
+    "description": "Checks kidney performance",
+    "parameters": [
+      "Creatinine",
+      "Urea",
+      "Uric Acid"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 999,
+    "originalPrice": 899,
+    "discount": 45,
+    "reportTime": "24 hrs",
+    "fastingRequired": true,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Kidney health"
+    ],
+    "status": "active",
+    "testId": "HT0004"
+  },
+  {
+    "testCode": "LIP001",
+    "testName": "Lipid Profile",
+    "category": "Advanced",
+    "description": "Measures cholesterol levels",
+    "parameters": [
+      "HDL",
+      "LDL",
+      "Triglycerides"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 499,
+    "originalPrice": 899,
+    "discount": 45,
+    "reportTime": "24 hrs",
+    "fastingRequired": true,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Heart health"
+    ],
+    "status": "active",
+    "testId": "HT0005"
+  },
+  {
+    "testCode": "BSF001",
+    "testName": "Blood Sugar (any one)",
+    "category": "Basic",
+    "description": "Measures fasting glucose",
+    "parameters": [
+      "Glucose Fasting"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 149,
+    "originalPrice": 299,
+    "discount": 50,
+    "reportTime": "12 hrs",
+    "fastingRequired": true,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Diabetes check"
+    ],
+    "status": "active",
+    "isPopular": true,
+    "testId": "HT0006"
+  },
+  {
+    "testCode": "BSR001",
+    "testName": "Blood Sugar (Fasting & Random)",
+    "category": "Basic",
+    "description": "Measures random glucose",
+    "parameters": [
+      "Glucose Random"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 149,
+    "originalPrice": 299,
+    "discount": 50,
+    "reportTime": "12 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Diabetes check"
+    ],
+    "status": "active",
+    "testId": "HT0007"
+  },
+  {
+    "testCode": "HBA001",
+    "testName": "HbA1c Test",
+    "category": "Advanced",
+    "description": "Average sugar level for 3 months",
+    "parameters": [
+      "HbA1c"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 399,
+    "originalPrice": 699,
+    "discount": 43,
+    "reportTime": "24 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Diabetes monitoring"
+    ],
+    "status": "active",
+    "testId": "HT0008"
+  },
+  {
+    "testCode": "URT001",
+    "testName": "Urine Routine",
+    "category": "Basic",
+    "description": "Checks urinary health",
+    "parameters": [
+      "Protein",
+      "Sugar",
+      "Cells"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 199,
+    "originalPrice": 399,
+    "discount": 50,
+    "reportTime": "24 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Urine infection"
+    ],
+    "status": "active",
+    "testId": "HT0009"
+  },
+  {
+    "testCode": "VITD001",
+    "testName": "Vitamin D Test",
+    "category": "Advanced",
+    "description": "Measures Vitamin D level",
+    "parameters": [
+      "Vitamin D"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 799,
+    "originalPrice": 1499,
+    "discount": 47,
+    "reportTime": "24 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Vitamin deficiency"
+    ],
+    "status": "active",
+    "testId": "HT0010"
+  },
+  {
+    "testCode": "VITB001",
+    "testName": "Vitamin B12 Test",
+    "category": "Advanced",
+    "description": "Measures Vitamin B12 level",
+    "parameters": [
+      "Vitamin B12"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 699,
+    "originalPrice": 1299,
+    "discount": 46,
+    "reportTime": "24 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Vitamin deficiency"
+    ],
+    "status": "active",
+    "testId": "HT0011"
+  },
+  {
+    "testCode": "CRP001",
+    "testName": "CRP Test",
+    "category": "Advanced",
+    "description": "Detects inflammation",
+    "parameters": [
+      "CRP"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 499,
+    "originalPrice": 899,
+    "discount": 45,
+    "reportTime": "24 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Inflammation"
+    ],
+    "status": "active",
+    "testId": "HT0012"
+  },
+  {
+    "testCode": "ESR001",
+    "testName": "ESR Test",
+    "category": "Basic",
+    "description": "Measures inflammation level",
+    "parameters": [
+      "ESR"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 149,
+    "originalPrice": 299,
+    "discount": 50,
+    "reportTime": "24 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Infection"
+    ],
+    "status": "active",
+    "testId": "HT0013"
+  },
+  {
+    "testCode": "TSH001",
+    "testName": "TSH Test",
+    "category": "Basic",
+    "description": "Checks thyroid hormone",
+    "parameters": [
+      "TSH"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 199,
+    "originalPrice": 399,
+    "discount": 50,
+    "reportTime": "24 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Thyroid check"
+    ],
+    "status": "active",
+    "testId": "HT0014"
+  },
+  {
+    "testCode": "DLC001",
+    "testName": "DLC Count",
+    "category": "Basic",
+    "description": "White blood cell count",
+    "parameters": [
+      "DLC"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 149,
+    "originalPrice": 299,
+    "discount": 50,
+    "reportTime": "24 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Infection"
+    ],
+    "status": "active",
+    "testId": "HT0015"
+  },
+  {
+    "testCode": "PLT001",
+    "testName": "Platelet Count",
+    "category": "Basic",
+    "description": "Measures platelet levels",
+    "parameters": [
+      "Platelets"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 149,
+    "originalPrice": 299,
+    "discount": 50,
+    "reportTime": "24 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Dengue check"
+    ],
+    "status": "active",
+    "testId": "HT0016"
+  },
+  {
+    "testCode": "IRON001",
+    "testName": "Iron Test",
+    "category": "Advanced",
+    "description": "Measures iron levels",
+    "parameters": [
+      "Serum Iron"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 399,
+    "originalPrice": 699,
+    "discount": 43,
+    "reportTime": "24 hrs",
+    "fastingRequired": true,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Iron deficiency"
+    ],
+    "status": "active",
+    "testId": "HT0017"
+  },
+  {
+    "testCode": "CAL001",
+    "testName": "Calcium Test",
+    "category": "Basic",
+    "description": "Measures calcium levels",
+    "parameters": [
+      "Calcium"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 199,
+    "originalPrice": 399,
+    "discount": 50,
+    "reportTime": "24 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Bone health"
+    ],
+    "status": "active",
+    "testId": "HT0018"
+  },
+  {
+    "testCode": "URIC001",
+    "testName": "Uric Acid Test",
+    "category": "Basic",
+    "description": "Measures uric acid",
+    "parameters": [
+      "Uric Acid"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 199,
+    "originalPrice": 399,
+    "discount": 50,
+    "reportTime": "24 hrs",
+    "fastingRequired": true,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Gout"
+    ],
+    "status": "active",
+    "testId": "HT0019"
+  },
+  {
+    "testCode": "BIL001",
+    "testName": "Bilirubin Test",
+    "category": "Basic",
+    "description": "Measures bilirubin",
+    "parameters": [
+      "Bilirubin"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 149,
+    "originalPrice": 299,
+    "discount": 50,
+    "reportTime": "24 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Liver issues"
+    ],
+    "status": "active",
+    "testId": "HT0020"
+  },
+  {
+    "testCode": "ALB001",
+    "testName": "Albumin Test",
+    "category": "Basic",
+    "description": "Measures protein level",
+    "parameters": [
+      "Albumin"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 149,
+    "originalPrice": 299,
+    "discount": 50,
+    "reportTime": "24 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Protein check"
+    ],
+    "status": "active",
+    "testId": "HT0021"
+  },
+  {
+    "testCode": "PROT001",
+    "testName": "Total Protein",
+    "category": "Basic",
+    "description": "Measures total protein",
+    "parameters": [
+      "Protein"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 149,
+    "originalPrice": 299,
+    "discount": 50,
+    "reportTime": "24 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Nutrition"
+    ],
+    "status": "active",
+    "testId": "HT0022"
+  },
+  {
+    "testCode": "CPK001",
+    "testName": "CPK Test",
+    "category": "Advanced",
+    "description": "Muscle enzyme test",
+    "parameters": [
+      "CPK"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 499,
+    "originalPrice": 899,
+    "discount": 45,
+    "reportTime": "24 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Muscle damage"
+    ],
+    "status": "active",
+    "testId": "HT0023"
+  },
+  {
+    "testCode": "DENG001",
+    "testName": "Dengue Test",
+    "category": "Advanced",
+    "description": "Detects dengue infection",
+    "parameters": [
+      "NS1",
+      "IgG",
+      "IgM"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 999,
+    "originalPrice": 1999,
+    "discount": 50,
+    "reportTime": "24 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Dengue"
+    ],
+    "status": "active",
+    "isPopular": true,
+    "testId": "HT0024"
+  },
+  {
+    "testCode": "MAL001",
+    "testName": "Malaria Test",
+    "category": "Basic",
+    "description": "Detects malaria parasite",
+    "parameters": [
+      "MP"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 299,
+    "originalPrice": 599,
+    "discount": 50,
+    "reportTime": "24 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Malaria"
+    ],
+    "status": "active",
+    "testId": "HT0025"
+  },
+  {
+    "testCode": "COVID001",
+    "testName": "COVID RT-PCR",
+    "category": "Advanced",
+    "description": "Detects COVID virus",
+    "parameters": [
+      "RTPCR"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 799,
+    "originalPrice": 1499,
+    "discount": 47,
+    "reportTime": "24 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "COVID"
+    ],
+    "status": "active",
+    "testId": "HT0026"
+  },
+  {
+    "testCode": "HIV001",
+    "testName": "HIV Test",
+    "category": "Advanced",
+    "description": "Detects HIV infection",
+    "parameters": [
+      "HIV"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 699,
+    "originalPrice": 1299,
+    "discount": 46,
+    "reportTime": "24 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "HIV"
+    ],
+    "status": "active",
+    "testId": "HT0027"
+  },
+  {
+    "testCode": "HBV001",
+    "testName": "Hepatitis B",
+    "category": "Advanced",
+    "description": "Detects Hepatitis B",
+    "parameters": [
+      "HBsAg"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 499,
+    "originalPrice": 899,
+    "discount": 45,
+    "reportTime": "24 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Liver infection"
+    ],
+    "status": "active",
+    "testId": "HT0028"
+  },
+  {
+    "testCode": "HCV001",
+    "testName": "Hepatitis C",
+    "category": "Advanced",
+    "description": "Detects Hepatitis C",
+    "parameters": [
+      "HCV"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 699,
+    "originalPrice": 1299,
+    "discount": 46,
+    "reportTime": "24 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Liver infection"
+    ],
+    "status": "active",
+    "testId": "HT0029"
+  },
+  {
+    "testCode": "FSH001",
+    "testName": "FSH Test",
+    "category": "Advanced",
+    "description": "Hormone test",
+    "parameters": [
+      "FSH"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 599,
+    "originalPrice": 999,
+    "discount": 40,
+    "reportTime": "24 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Fertility"
+    ],
+    "status": "active",
+    "testId": "HT0030"
+  },
+  {
+    "testCode": "LH001",
+    "testName": "LH Test",
+    "category": "Advanced",
+    "description": "Hormone test",
+    "parameters": [
+      "LH"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 599,
+    "originalPrice": 999,
+    "discount": 40,
+    "reportTime": "24 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Fertility"
+    ],
+    "status": "active",
+    "testId": "HT0031"
+  },
+  {
+    "testCode": "PRL001",
+    "testName": "Prolactin Test",
+    "category": "Advanced",
+    "description": "Hormone test",
+    "parameters": [
+      "Prolactin"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 499,
+    "originalPrice": 899,
+    "discount": 45,
+    "reportTime": "24 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Fertility"
+    ],
+    "status": "active",
+    "testId": "HT0032"
+  },
+  {
+    "testCode": "TEST001",
+    "testName": "Testosterone Test",
+    "category": "Advanced",
+    "description": "Hormone test",
+    "parameters": [
+      "Testosterone"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 799,
+    "originalPrice": 1499,
+    "discount": 47,
+    "reportTime": "24 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Hormonal issues"
+    ],
+    "status": "active",
+    "testId": "HT0033"
+  },
+  {
+    "testCode": "AMH001",
+    "testName": "AMH Test",
+    "category": "Advanced",
+    "description": "Fertility test",
+    "parameters": [
+      "AMH"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 1499,
+    "originalPrice": 2499,
+    "discount": 40,
+    "reportTime": "48 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Fertility"
+    ],
+    "status": "active",
+    "testId": "HT0034"
+  },
+  {
+    "testCode": "PSA001",
+    "testName": "PSA Test",
+    "category": "Advanced",
+    "description": "Prostate test",
+    "parameters": [
+      "PSA"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 599,
+    "originalPrice": 999,
+    "discount": 40,
+    "reportTime": "24 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Prostate health"
+    ],
+    "status": "active",
+    "testId": "HT0035"
+  },
+  {
+    "testCode": "D3P001",
+    "testName": "Diabetes Profile",
+    "category": "Package",
+    "description": "Diabetes package",
+    "parameters": [
+      "HbA1c",
+      "Glucose"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 699,
+    "originalPrice": 1299,
+    "discount": 46,
+    "reportTime": "24 hrs",
+    "fastingRequired": true,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Diabetes"
+    ],
+    "status": "active",
+    "isRecommendedPackage": true,
+    "testId": "HT0036"
+  },
+  {
+    "testCode": "THP001",
+    "testName": "Thyroid Package",
+    "category": "Package",
+    "description": "Thyroid package",
+    "parameters": [
+      "T3",
+      "T4",
+      "TSH"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 599,
+    "originalPrice": 999,
+    "discount": 40,
+    "reportTime": "24 hrs",
+    "fastingRequired": false,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Thyroid"
+    ],
+    "status": "active",
+    "isRecommendedPackage": true,
+    "testId": "HT0037"
+  },
+  {
+    "testCode": "HRT001",
+    "testName": "Heart Checkup",
+    "category": "Package",
+    "description": "Heart package",
+    "parameters": [
+      "Lipid",
+      "CRP"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 899,
+    "originalPrice": 1599,
+    "discount": 44,
+    "reportTime": "24 hrs",
+    "fastingRequired": true,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Heart health"
+    ],
+    "status": "active",
+    "isRecommendedPackage": true,
+    "testId": "HT0038"
+  },
+  {
+    "testCode": "FBC001",
+    "testName": "Full Body Checkup",
+    "category": "Package",
+    "description": "Complete package",
+    "parameters": [
+      "CBC",
+      "Lipid",
+      "Sugar",
+      "Liver",
+      "Kidney"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 999,
+    "originalPrice": 1999,
+    "discount": 50,
+    "reportTime": "48 hrs",
+    "fastingRequired": true,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Full body"
+    ],
+    "status": "active",
+    "isRecommendedPackage": true,
+    "isFullBodyPackage": true,
+    "testId": "HT0039"
+  },
+  {
+    "testCode": "ADV001",
+    "testName": "Advanced Health Package",
+    "category": "Package",
+    "description": "Advanced checkup",
+    "parameters": [
+      "CBC",
+      "Liver",
+      "Kidney",
+      "Thyroid"
+    ],
+    "city": "Hindaun city",
+    "sellingPrice": 1499,
+    "originalPrice": 2999,
+    "discount": 50,
+    "reportTime": "48 hrs",
+    "fastingRequired": true,
+    "homeCollection": true,
+    "recommendedFor": [
+      "Advanced screening"
+    ],
+    "status": "active",
+    "isRecommendedPackage": true,
+    "isFullBodyPackage": true,
+    "testId": "HT0040"
+  }
+]
